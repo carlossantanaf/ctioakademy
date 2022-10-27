@@ -147,6 +147,9 @@
   transition: ease .3s;
   opacity: 1;
 }
+.mosaicoMobile {
+  display: none;
+}
 
 @media(max-width: 1200px) {
   .tituloMain h1 {
@@ -171,5 +174,44 @@
   }
   .tituloMain h1 {
     font-size: 5rem;
+  }
+}
+
+@media(max-width: 1000px) {
+  .mosaicoT {
+    display: none;
+  }
+  .mosaicoMobile {
+    display: initial;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media(max-width: 700px) {
+  .mosaicoMobile img {
+    max-width: 100%;
+  }
+  .mosaicoMobile {
+    max-width: 60%;
+  }
+  .textosM div h2 {
+    font-size: 1.5rem;
+  }
+  .textosM div p {
+    font-size: 1rem;
+  }
+  .tituloMain h1 {
+    font-size: 4rem;
+  }
+  .tituloMain h1 span {
+    font-size: 1.6rem;
+  }
+}
+@media(max-width: 550px) {
+  .tituloMain h1 {
+    font-size: 3rem;
+  }
+  .tituloMain h1 > span {
+    font-size: 1.2rem;
   }
 }

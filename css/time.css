@@ -175,6 +175,71 @@ right: -6rem;
   .tituloTime h1 > span {
     font-size: 2rem;
   }
-  
 }
 
+@media(max-width: 700px) {
+  .tituloTime h1 {
+    font-size: 4rem;
+  }
+  .tituloTime h1 > span {
+    font-size: 1.6rem;
+  }
+  .timePessoas div div img {
+    max-width: 100%;
+  }
+  .timePessoas div {
+    max-width: 40%;
+  }
+  .timePessoas div div {
+    max-width: 100%;
+  }
+  .timePessoas  div  span {
+    font-size: 1.3rem;
+  }
+}
+@media(max-width: 550px) {
+  .time-bg {
+    padding-top: 4rem;
+  }
+.tituloTime {
+  margin-bottom: 4rem;
+}
+  .tituloTime h1 {
+    font-size: 3rem;
+  }
+  .tituloTime h1 > span {
+    font-size: 1.2rem;
+  }
+  .timePessoas  div  span {
+    font-size: 1rem;
+  }
+  .timePessoas div:nth-child(2) span,
+  .timePessoas div:nth-child(4) span {
+    right: -3rem;
+  }
+  .timePessoas div:nth-child(1) span,
+  .timePessoas div:nth-child(3) span {
+    left: -3rem;
+  }
+  .timePessoas div:nth-child(1):hover span {
+    right:-3rem ;
+    text-align: end;
+    left: initial;
+  }
+  .timePessoas div:nth-child(3):hover span {
+    right:-3rem ;
+    text-align: end;
+    left: initial;
+  }
+  .timePessoas div:nth-child(2):hover span {
+    left:-3rem ;
+    text-align: start;
+    right: initial;
+  }
+  .timePessoas div:nth-child(4):hover span {
+    left:-3rem ;
+    text-align: start;
+    right: initial;
+  }
+  
+}
