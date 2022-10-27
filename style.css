@@ -1,0 +1,18 @@
+@import url('./css/header.css');
+@import url('./css/main.css');
+@import url('./css/time.css');
+
+* {
+  scroll-behavior:smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

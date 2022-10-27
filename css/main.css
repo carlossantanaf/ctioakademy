@@ -1,0 +1,175 @@
+.tituloMain {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.tituloMain h1{
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(1, 28, 64, 20%);
+  font-weight: 600;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tituloMain span {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: #011C40;
+  text-shadow: 1px 1px 10px #011C40;
+  font-size: 4rem;
+  opacity: 1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.tituloMain span:hover {
+  animation-name: piscaPiscaAzul;
+}
+@keyframes piscaPiscaAzul {
+  0% {text-shadow: 0px 0px 0px;}
+  50% {text-shadow: 1px 1px 10px #011C40;}
+  100% {text-shadow: 0px 0px 0px;}
+}
+
+.mosaicoTextos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  padding: 1rem;
+  margin-bottom: 7rem;
+}
+
+.textosM {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.textosM div:first-child{
+  position: relative;
+}
+.textosM div:first-child::after {
+  content: "";
+  height: 80px;
+  width: 1px;
+  background-color: #111111;
+  position: absolute;
+  right: 60%;
+  bottom: -7rem;
+}
+.textosM div:nth-child(2){
+  position: relative;
+}
+.textosM div:nth-child(2)::after {
+  content: "";
+  height: 80px;
+  width: 1px;
+  background-color: #111111;
+  position: absolute;
+  right: 60%;
+  bottom: -7rem;
+}
+
+.textosM h2{
+  font-size: 2.2rem;
+  color: #111111;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.textosM p{
+  font-size: 1.2rem;
+  color: #034C8C;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  max-width: 22ch;
+}
+
+.mosaicoT {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.um {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.dois {
+  grid-column: 3/4;
+  grid-row: 1/5;
+}
+.tres {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  align-self: center;
+}
+.quatro {
+  grid-column: 1/3;
+  grid-row: 3/6;
+  justify-self: end;
+}
+.cinco {
+  grid-column: 3/4;
+  grid-row: 4/8;
+ margin-top: 1.7rem;
+}
+.seis {
+  grid-column: 4/5;
+  grid-row: 4/7;
+  margin-top: -1.5rem;
+}
+.sete {
+  grid-column: 2/3;
+  grid-row: 5/8;
+  margin-top: -3rem;
+}
+.oito {
+  grid-column: 3/4;
+  grid-row: 6/8;
+  margin-top: -1.3rem;
+}
+.nove {
+  grid-column: 4/5;
+  grid-row: 5/8;
+  margin-top: 3.9rem;
+}
+.mosaicoT {
+  margin-top: 5rem;
+}
+.mosaicoT > div {
+  opacity: 0.9;
+}
+.mosaicoT > div:hover {
+  transform: scale(1.02);
+  transition: ease .3s;
+  opacity: 1;
+}
+
+@media(max-width: 1200px) {
+  .tituloMain h1 {
+    font-size: 6rem;
+  }
+  .tituloMain h1 > span {
+    font-size: 3rem;
+  }
+  .mosaicoTextos {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+  }
+}
+@media(max-width: 1030px) {
+  .mosaicoTextos {
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width: 1000px) {
+  .tituloMain h1 > span {
+    font-size: 2rem;
+  }
+  .tituloMain h1 {
+    font-size: 5rem;
+  }
+}

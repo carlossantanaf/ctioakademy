@@ -1,0 +1,180 @@
+.tituloTime {
+  margin-bottom: 8rem;
+}
+.tituloTime h1{
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(242, 215, 133, 20%);
+  font-weight: 600;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tituloTime span {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: #D9AE30;
+  font-size: 3.5rem;
+  opacity: 1;
+  text-shadow: 1px 1px 10px #D9AE30;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.tituloTime span:hover {
+  animation-name: piscaPiscaAmarelo;
+}
+@keyframes piscaPiscaAmarelo {
+  0% {text-shadow: 0px 0px 0px;}
+  50% {text-shadow: 1px 1px 10px #D9AE30;}
+  100% {text-shadow: 0px 0px 0px;}
+}
+
+.time-bg {
+  background: url('../images/backTime.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
+}
+
+.timePessoas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3.5rem;
+}
+
+.timePessoas div {
+  cursor: pointer;
+}
+
+.timePessoas div span {
+  color: #D9AE30;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  
+}
+
+.timePessoas div:nth-child(1) {
+  position: relative;
+}
+
+.timePessoas div:nth-child(1):hover span {
+  right:-6rem ;
+  text-align: end;
+  left: initial;
+}
+.timePessoas div:nth-child(3):hover span {
+  right:-6rem ;
+  text-align: end;
+  left: initial;
+}
+.timePessoas div:nth-child(2):hover span {
+  left:-6rem ;
+  text-align: end;
+  right: initial;
+}
+.timePessoas div:nth-child(4):hover span {
+  left:-6rem ;
+  text-align: end;
+  right: initial;
+}
+
+.timePessoas div:nth-child(1) span{
+position: absolute;
+bottom: 50%;
+left: -6rem;
+}
+
+.timePessoas div:nth-child(3) {
+  position: relative;
+}
+
+.timePessoas div:nth-child(3) span{
+position: absolute;
+bottom: 50%;
+left: -6rem;
+}
+
+.timePessoas div:nth-child(2) {
+  position: relative;
+}
+
+.timePessoas div:nth-child(2) span{
+position: absolute;
+bottom: 50%;
+right: -6rem;
+}
+
+.timePessoas div:nth-child(4) {
+  position: relative;
+}
+
+.timePessoas div:nth-child(4) span{
+position: absolute;
+bottom: 50%;
+right: -6rem;
+}
+
+
+
+.timePessoas div:nth-child(2),
+.timePessoas div:nth-child(4)
+ {
+  text-align:end ;
+}
+
+@media(max-width: 1280px) {
+  .timePessoas {
+    column-gap: 0rem;
+  }
+  .timePessoas div:nth-child(2),
+  .timePessoas div:nth-child(4) {
+    justify-self: start;
+  }
+  .timePessoas div:nth-child(1),
+  .timePessoas div:nth-child(3) {
+    justify-self: end;
+  }
+  .timePessoas div div img {
+    max-width: 80%;
+  }
+}
+@media(max-width: 1200px) {
+  .tituloTime h1 {
+    font-size: 6rem;
+  }
+  .tituloTime h1 > span {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 1000px) {
+  .timePessoas  {
+    grid-template-columns: 1fr;
+  }
+  .timePessoas div:nth-child(2),
+  .timePessoas div:nth-child(4) {
+    justify-self: center;
+  }
+  .timePessoas div:nth-child(1),
+  .timePessoas div:nth-child(3) {
+    justify-self: center;
+  }
+  .timePessoas div div img {
+    max-width: 100%;
+  }
+  .tituloTime h1 {
+    font-size: 6rem;
+  }
+  .tituloTime h1 > span {
+    font-size: 2rem;
+  }
+  
+}
+
