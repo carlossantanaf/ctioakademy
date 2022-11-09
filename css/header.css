@@ -133,6 +133,9 @@ background-size:cover;
 }
 
 @media(max-width: 800px) {
+  .header-menu {
+    background: black;
+  }
   .header-intro {
     justify-content: center;
   }
